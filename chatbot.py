@@ -77,7 +77,7 @@ if st.session_state.messages[-1]["role"] == "user":
         with st.spinner("Thinking..."):
             try:
                 # 🚫 Block certain topics
-                blocked_keywords = ["Indian politics", "indian Politicians","Netagiti","local polictics","do not answer to local polictics or politician on query",
+                blocked_keywords = ["Indian politics", "indian Politicians","Netagiti","local polictics","Mulayam singh","Kalyan Singh","Lalu Yadav","Akhilesh Yadav",
     "obama", "trump", "modi", "putin", "biden", "president", "politics","ukraine", "russia", "war", "conflict", "nato", "geopolitics", "election"]
 
                 if any(word.lower() in prompt.lower() for word in blocked_keywords):
